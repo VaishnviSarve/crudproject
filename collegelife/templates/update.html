@@ -1,0 +1,17 @@
+<h1> Update </h1>
+
+<form action="updaterequest/{{mylife.id}}" method='post'>
+    {%csrf_token%}
+    <lable for='age'>Age:</lable><br>
+    <input type='text'id='age'name='age'value='{{mylife.age}}'><br>
+    <lable for='topic'>Topic</lable><br>
+    <input type='text'id='topic'name='topic'value='{{mylife.topic}}'><br>
+    <lable for='college'>College</lable><br>
+    <input type='text'id='college'name='college'value='{{mylife.college}}'><br>
+    <lable for='school'>School</lable><br>
+    <input type='text'id='school'name='school'value='{{mylife.school}}'><br>
+    <lable for='rollno'>Rollno</lable><br>
+    <input type='text'id='rollno'name='rollno'value='{{mylife.rollno}}'><br>
+    <br>
+    <input type='submit'value='sumbit'>
+</form>
